@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <meta
+      name="description"
+      content="Accessible and responsive profile card component"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="profile-card" data-testid="test-profile-card">
+        <!-- Header Section -->
+        <header class="profile-header">
+          <h1 class="profile-name" data-testid="test-user-name">
+            Onokome Ogedengbe
+          </h1>
+          <p class="profile-bio" data-testid="test-user-bio">
+            Frontend developer passionate about creating accessible,
+            user-friendly web experiences. Love working with modern JavaScript
+            frameworks and contributing to open source projects.
+          </p>
+        </header>
+
+        <!-- Avatar Section -->
+        <section class="avatar-section">
+          <figure class="avatar-container">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5635AQFKPcvP45EgDQ/profile-framedphoto-shrink_400_400/B56ZmaZcsWG0Ac-/0/1759231986752?e=1761307200&v=beta&t=o7cjzyhfsy7yZuVqJc6qqEe8R4dME_6KpXEQjdppwhM"
+              alt="Onokome Ogedengbe smiling professionally"
+              class="avatar-image"
+              data-testid="test-user-avatar"
+            />
+            <figcaption class="avatar-caption">Frontend Developer</figcaption>
+          </figure>
+
+          <!-- Avatar URL Input --->
+          <div class="avatar-url-container">
+            <label for="avatar-url-input" class="url-input-label">
+              Update Avatar URL
+            </label>
+            <div class="input-group">
+              <input
+                type="url"
+                id="avatar-url-input"
+                class="url-input"
+                placeholder="https://example.com/avatar.jpg"
+                aria-describedby="url-help"
+              />
+              <button
+                type="button"
+                class="url-submit-button"
+                id="update-avatar"
+              >
+                Update
+              </button>
+            </div>
+            <div id="url-help" class="help-text">
+              Enter a direct URL to an image file
+            </div>
+          </div>
+
+          <div class="preview-notice" aria-live="polite"></div>
+        </section>
+
+        <!-- Current Time -->
+        <div class="time-container">
+          <span class="time-label">Current Time (ms):</span>
+          <span class="current-time" data-testid="test-user-time">0</span>
+        </div>
+        <!-- Social Links -->
+        <nav class="social-nav" aria-label="Social media links">
+          <h2 class="section-title">Connect with me</h2>
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://github.com/onokome"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-github"
+              >
+                <span class="social-icon">💻</span>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/onokome_og"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-twitter"
+              >
+                <span class="social-icon">🐦</span>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/onokome-ogedengbe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-linkedin"
+              >
+                <span class="social-icon">💼</span>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/onome_col/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-instagram"
+              >
+                <span class="social-icon">⚡</span>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Hobbies Section -->
+        <section class="hobbies-section" aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading" class="section-title">
+            Hobbies & Interests
+          </h2>
+          <ul class="hobbies-list" data-testid="test-user-hobbies">
+            <li class="hobby-item">🧑‍💻 Coding and frontend tinkering</li>
+            <li class="hobby-item">📚 Reading sci-fi and fantasy novels</li>
+            <li class="hobby-item">🌍 Exploring ideas / communities online</li>
+            <li class="hobby-item">🍳 Experimental cooking</li>
+            <li class="hobby-item">🎥 Watching really good movies</li>
+            <li class="hobby-item">🎮 Retro video game collection</li>
+          </ul>
+        </section>
+        <!-- Dislikes Section -->
+        <section class="dislikes-section" aria-labelledby="dislikes-heading">
+          <h2 id="dislikes-heading" class="section-title">Pet Peeves</h2>
+          <ul class="dislikes-list" data-testid="test-user-dislikes">
+            <li class="dislike-item">📧 Unread notification badges</li>
+            <li class="dislike-item">🗣️ Talking too much</li>
+            <li class="dislike-item">🚦 Unnecessary traffic lights</li>
+            <li class="dislike-item">📱 Slow internet connections</li>
+            <li class="dislike-item">
+              ⏰ Wasting time waiting for things to load
+            </li>
+            <li class="dislike-item">🗑️ Littering in natural spaces</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
