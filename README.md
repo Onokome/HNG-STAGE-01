@@ -50,11 +50,11 @@ You can run this project easily on your local machine — no special setup or bu
 ###  Option 1 — Open in Browser (Quick Start)
 1. **Download or clone** the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Onokome/HNG-STAGE-01.git
    ```
 2. **Navigate** into the project folder:
    ```bash
-   cd your-repo-name
+   cd HNG-STAGE-01
    ```
 3. **Open** the `index.html` file in your browser.  
    - You can double-click it, or  
@@ -75,7 +75,7 @@ This will start a local server and automatically refresh your browser when you m
 ---
 
 ### 🌍 Option 3 — Run Online (Optional)
-- [Netlify Drop](https://app.netlify.com/drop)
+**https://hng-stage-01.netlify.app/**
 
 
 ---
